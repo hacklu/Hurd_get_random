@@ -1,0 +1,19 @@
+subsystem random 500;
+
+#include <hurd/hurd_types.defs>
+
+/*type int        = MSG_TYPE_INTEGER_32;*/
+/*type port_t     = MSG_TYPE_PORT;*/
+/*type boolean_t  = MSG_TYPE_INTEGER_32;*/
+/*type string25   = (MSG_TYPE_STRING_C,8*25);*/
+
+/*import "random_types.h";*/
+
+routine get_random(
+                /*requestport     server_port     : port_t;*/
+                requestport     server_port     : mach_port_t;
+                out             num             : int);
+
+/*routine get_secret(*/
+                /*requestport     server_port     : mach_port_t;*/
+                /*inout           password        : string25);*/
